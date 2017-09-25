@@ -44,15 +44,16 @@
             <div class="col-sm-6" ng-repeat="(key, val) in rate">
     <div class="card mb-5" >
             <div class="card-body">
-                    <h4 class="card-title">{{ val.s_name }}</h4>
+                    <h4 class="card-title">{{ val.s_name }} <span class="badge badge-pill badge-info">Рівень {{ val.leved }}</span></h4>
                     <h6 class="card-subtitle mb-2 text-muted">ID: {{ key }}</h6>
                     <p class="card-text"> {{ val.dist }}</p>
-                    <p class="card-text"> Населений пункт: {{ val.town }}</p>
+                    <p class="card-text"> Населений пункт: {{ val.town }} <span>(населення: {{val.populfation}})</span></p>
                     <p class="card-text"> Вулиця: {{ val.street }}</p>
                     <p class="card-text"> Керівник: {{ val.head }}</p>
-                    <a href="#" class="card-link">{{ val.phone }}</a>
-                    <a href="#" class="card-link">{{ val.mail }}</a>
+                    <p class="card-text">Тел.: <a href="#" class="card-link"> {{ val.phone }}</a></p>
+                    <p class="card-text">Email: <a href="#" class="card-link">{{ val.mail }}</a></p>
                   </div>
+                  <!-- <div>{{val}}</div> -->
      </div>
     </div>
   </div>
