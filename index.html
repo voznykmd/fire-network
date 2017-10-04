@@ -39,6 +39,13 @@
             </form>
           </div>
         </nav>
+        <div class="container mb-5">
+          <div class="row">
+            <div class="col">
+              <div class="card" id="map"></div>
+            </div>
+          </div>
+        </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-6" ng-repeat="(key, val) in rate">
@@ -60,5 +67,7 @@
   </div>
 </div>
   </body>
-
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdcAQe-2nEgTHd7oKUW7iMlpxYbUC-KXs&callback=initMap">
+  </script>
 </html>
