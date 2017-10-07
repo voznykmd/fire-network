@@ -15,6 +15,7 @@ app.controller('RateCtrl', function ($scope, $timeout) {
 });
 
 
+
 function initMap() {
   // Styles a map in night mode.
   var map = new google.maps.Map(document.getElementById('map'), {
